@@ -1,0 +1,41 @@
+---
+# tasks file for ansible-projeto03
+- name: Only run "update_cache=yes" if the last one is more than 3600 seconds ago
+  ansible.builtin.apt:
+    update_cache: yes
+
+- name: Install nginx 
+  apt:
+    name: nginx
+
+- name: Install vim
+  apt:
+    name: vim
+
+- name: Install curl
+  apt:
+    name: curl
+
+- name: Install telnet
+  apt:
+    name: telnet
+
+- name: Install unzip
+  apt:
+    name: unzip
+
+- name: Install wget
+  apt:
+    name: wget
+
+- name: Install net-tools
+  apt:
+    name: net-tools
+
+- name: Install htop
+  apt:
+    name: htop
+
+- name: Install nmap
+  apt:
+    name: nmap
